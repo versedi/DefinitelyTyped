@@ -1,5 +1,5 @@
 # Installation
-> `npm install --save @types/autocomplete`
+> `npm install --save @types/trevoreyre__autocomplete`
 
 # Summary
 This package contains type definitions for @trevoreyre/autocomplete (https://github.com/trevoreyre/autocomplete).
