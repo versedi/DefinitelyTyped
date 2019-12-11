@@ -1,11 +1,10 @@
-// Type definitions for autocomplete-js
+// Type definitions for @trevoreyre/autocomplete 2.0
 // Project: https://github.com/trevoreyre/autocomplete/, https://autocomplete.trevoreyre.com/
 // Definitions by: versedi <https://github.com/versedi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
 export as namespace Autocomplete;
-
 
 /**
  * * Creates a props object with overridden toString function. toString returns an attributes
@@ -20,7 +19,6 @@ export class Props {
     constructor(index: string, selectedIndex: string, baseClass: string);
     toString(): string
 }
-
 
 // --------------------------------------------------------------------------------------
 // Options Interfaces
@@ -96,13 +94,12 @@ export interface EventHandlers {
     handleResultClick: Function,
 }
 
-
 // --------------------------------------------------------------------------------------
 // Autocomplete
 // --------------------------------------------------------------------------------------
 
 declare global {
     interface Autocomplete<TElement = HTMLElement> {
-        constructor(inputSelector: string, options?: AutocompleteOptions);
+        constructor(inputSelector: string, options?: AutocompleteOptions): Autocomplete;
     }
 }
