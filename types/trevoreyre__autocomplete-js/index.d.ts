@@ -29,7 +29,7 @@ export interface AutocompleteJsOptions {
      * The search function to be executed on user input. Can be a synchronous function or a Promise.
      * @param input
      */
-    search(input: string): () => string | Promise<string>;
+    search(input: string): object| Promise<object>;
 
     /**
      * Fired when user submits result. Receives result as argument.
