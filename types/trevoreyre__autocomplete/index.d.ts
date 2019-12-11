@@ -29,7 +29,7 @@ export interface AutocompleteOptions {
      * The search function to be executed on user input. Can be a synchronous function or a Promise.
      * @param input
      */
-    search(input: string): () => string | Promise<string>;
+    search(input: string): object | Promise<object>;
 
     /**
      * Controls whether first result should be highlighted after input
