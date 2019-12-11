@@ -49,7 +49,6 @@ export interface LightboxOptions {
     /**
      * The time it takes for the image to fade in once loaded, in milliseconds.
      * Default 600
-
      */
     imageFadeDuration?: number;
 
@@ -91,7 +90,6 @@ export interface LightboxOptions {
      */
     wrapAround?: boolean;
 }
-
 
 // --------------------------------------------------------------------------------------
 // lightbox2
